@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Swiss Web Craft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <header class="header">
   <div class="logo">Swiss Web Craft</div>
   <nav class="nav">
@@ -8,15 +18,24 @@
     <a href="contact.html">Kontakt</a>
   </nav>
 </header>
+
 <section class="content">
-<h2>Kontakt</h2>
-<form action="mailto:lenny.uhlir@icloud.com" method="post" enctype="text/plain">
-<input type="text" name="Name" placeholder="Ihr Name" required />
-<input type="email" name="Email" placeholder="Ihre E-Mail" required />
-<textarea name="Nachricht" placeholder="Ihre Anfrage"></textarea>
-<button type="submit">Senden</button>
-</form>
+  <h2>Kontakt</h2>
+  <p>Schreib uns – wir melden uns schnellstmöglich.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+    <textarea name="message" placeholder="Ihre Anfrage" rows="5" required></textarea>
+
+    <input type="hidden" name="_subject" value="Neue Anfrage – Swiss Web Craft">
+    <button type="submit">Anfrage senden</button>
+  </form>
 </section>
+
 <footer>
   <p>© 2026 Swiss Web Craft · Schweiz</p>
 </footer>
+
+</body>
+</html>
