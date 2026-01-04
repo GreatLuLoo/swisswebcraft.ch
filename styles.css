@@ -639,7 +639,7 @@ input:focus, textarea:focus{
   justify-content: center;
 }
 .nav-logo{
-  height: 34px;
+  height: 28px;
   width: auto;
   display: block;
   border-radius: 8px; /* abrunden, optional */
