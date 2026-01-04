@@ -4,17 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Arbeitszeiten & Standort – Swiss Web Start</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts (Headlines + Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><span class="logo"></span><span>Swiss Web Start</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Swiss Web Start</span>
+      </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">Über uns</a>
         <a href="services.html">Dienstleistungen</a>
-        <a href="hours-location.html">Arbeitszeiten & Standort</a>
+        <a href="hours-location.html" aria-current="page">Arbeitszeiten & Standort</a>
         <a class="nav-cta" href="contact.html">Kontakt</a>
       </nav>
     </div>
@@ -22,30 +32,47 @@
 
   <main class="section">
     <div class="container">
-      <h2>Arbeitszeiten & Standort</h2>
+      <!-- Head -->
+      <div class="section-head reveal">
+        <h2>Arbeitszeiten & Standort</h2>
+        <p>
+          So erreichst du uns – unkompliziert, persönlich und flexibel.
+        </p>
+      </div>
 
-      <div class="split" style="margin-top:12px">
-        <div class="card">
-          <strong>Arbeitszeiten</strong>
-          <p class="muted" style="margin:8px 0 0">Montag – Freitag, 09:00 – 18:00</p>
-          <p class="muted" style="margin:8px 0 0">Am Wochenende nach Absprache.</p>
+      <!-- Info cards -->
+      <div class="split" style="margin-top:16px">
+        <div class="card reveal delay-1">
+          <h3>Arbeitszeiten</h3>
+          <p class="muted" style="margin-top:8px">
+            Montag – Freitag<br>
+            09:00 – 18:00
+          </p>
+          <p class="muted" style="margin-top:8px">
+            Am Wochenende nach Absprache.
+          </p>
         </div>
 
-        <div class="card">
-          <strong>Standort</strong>
-          <p class="muted" style="margin:8px 0 0">Schweiz · Zürich</p>
-          <p class="muted" style="margin:8px 0 0">
-            Meetings per Call oder (wenn’s passt) auch vor Ort.
+        <div class="card reveal delay-2">
+          <h3>Standort</h3>
+          <p class="muted" style="margin-top:8px">
+            Schweiz · Zürich
+          </p>
+          <p class="muted" style="margin-top:8px">
+            Meetings per Call oder – wenn es passt – auch vor Ort.
           </p>
         </div>
       </div>
 
-      <div class="card" style="margin-top:14px">
-        <strong>Schnellkontakt</strong>
-        <p class="muted" style="margin:8px 0 0">
-          Am einfachsten: über das Kontaktformular – wir melden uns schnellstmöglich.
+      <!-- Quick contact -->
+      <div class="card reveal delay-3" style="margin-top:18px">
+        <h3>Schnellkontakt</h3>
+        <p class="muted" style="margin-top:8px">
+          Am einfachsten erreichst du uns über das Kontaktformular.
+          Wir melden uns schnellstmöglich bei dir.
         </p>
-        <div class="hero-actions" style="margin-top:12px">
+
+        <div class="hero-actions" style="margin-top:14px">
           <a class="btn btn-primary" href="contact.html">Kontakt öffnen</a>
         </div>
       </div>
@@ -53,7 +80,13 @@
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Swiss Web Start · Schweiz</div>
+    <div class="container footer-inner">
+      <div>© 2026 Swiss Web Start · Schweiz</div>
+      <div class="footer-links">
+        <a href="contact.html">Kontakt</a>
+        <a href="services.html">Pakete</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
