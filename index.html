@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Swiss Web Start – Websites für kleine Unternehmen</title>
   <meta name="description" content="Moderne Websites für kleine Unternehmen in der Schweiz. Schnell, sauber, mobil-optimiert." />
-  <link rel="stylesheet" href="./styles.css?v=2" />
+
+  <!-- Fonts (Headlines + Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
@@ -29,33 +35,26 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-top reveal">
-          <!-- Platzhalter-Logo (Option 1: CSS Logo) -->
-          <div class="hero-logo" aria-hidden="true">
-            <span class="hero-logo-mark"></span>
+        <div class="hero-top">
+          <!-- NEU: Logo + Titel nebeneinander, zentriert -->
+          <div class="hero-row reveal">
+            <div class="hero-logo-mark" aria-hidden="true"></div>
+            <h1>Swiss Web Start</h1>
           </div>
 
-          <!-- Option 2: falls du ein echtes Logo hast -->
-          <!--
-          <img class="hero-logo-img" src="assets/logo.svg" alt="Swiss Web Start Logo" />
-          -->
+          <p class="hero-subtitle reveal delay-1">
+            Websites für kleine Unternehmen in der Schweiz – modern, mobil & auf Anfragen optimiert.
+          </p>
 
-          <div class="hero-title">
-            <h1>Swiss Web Start</h1>
-            <p class="hero-subtitle">
-              Websites für kleine Unternehmen in der Schweiz – modern, mobil & auf Anfragen optimiert.
-            </p>
+          <div class="hero-actions reveal delay-2">
+            <a class="btn btn-primary" href="contact.html">Kostenlose Anfrage</a>
+            <a class="btn btn-ghost" href="services.html">Pakete ansehen</a>
+          </div>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html">Kostenlose Anfrage</a>
-              <a class="btn btn-ghost" href="services.html">Pakete ansehen</a>
-            </div>
-
-            <div class="hero-badges">
-              <span class="badge">Mobile-optimiert</span>
-              <span class="badge">Schnell & sauber</span>
-              <span class="badge">Persönlich</span>
-            </div>
+          <div class="hero-badges reveal delay-3">
+            <span class="badge">Mobile-optimiert</span>
+            <span class="badge">Schnell & sauber</span>
+            <span class="badge">Persönlich</span>
           </div>
         </div>
 
