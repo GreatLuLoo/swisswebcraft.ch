@@ -621,7 +621,7 @@ input:focus, textarea:focus{
 .hero-logo-img{
   width: 60px;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 14px;
   object-fit: contain;
   display: block;
 }
