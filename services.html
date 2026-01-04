@@ -4,16 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dienstleistungen & Preise – Swiss Web Start</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts (Headlines + Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><span class="logo"></span><span>Swiss Web Start</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Swiss Web Start</span>
+      </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">Über uns</a>
-        <a href="services.html">Dienstleistungen</a>
+        <a href="services.html" aria-current="page">Dienstleistungen</a>
         <a href="hours-location.html">Arbeitszeiten & Standort</a>
         <a class="nav-cta" href="contact.html">Kontakt</a>
       </nav>
@@ -22,54 +32,77 @@
 
   <main class="section">
     <div class="container">
-      <h2>Dienstleistungen & Preise</h2>
-      <p class="muted">Zwei Pakete – klar & fair. (Individuelle Wünsche sind möglich.)</p>
+      <!-- Head -->
+      <div class="section-head reveal">
+        <h2>Dienstleistungen & Preise</h2>
+        <p>
+          Klare Pakete, faire Preise – ohne Agentur-Blabla.  
+          Individuelle Wünsche sind jederzeit möglich.
+        </p>
+      </div>
 
-      <div class="pricing" style="margin-top:12px">
-        <div class="price">
+      <!-- Pricing -->
+      <div class="pricing" style="margin-top:16px">
+        <!-- Starter -->
+        <div class="price reveal delay-1">
           <span class="badge">Starter</span>
           <h3>Starter Website</h3>
-          <p class="muted">1–3 Seiten · Modernes Design</p>
+          <p class="muted">1–3 Seiten · Modern & übersichtlich</p>
+
           <div class="amount">ab CHF 299.–</div>
+
           <ul class="ul">
-            <li>Mobile-optimiert</li>
-            <li>Kontakt / Standort / Öffnungszeiten</li>
-            <li>Grund-SEO (Titel, Description)</li>
+            <li>Mobile-optimiertes Design</li>
+            <li>Kontakt, Standort & Öffnungszeiten</li>
+            <li>Grund-SEO (Titel & Description)</li>
             <li>1 Korrekturrunde</li>
           </ul>
-          <div class="hero-actions" style="margin-top:12px">
+
+          <div class="hero-actions" style="margin-top:14px">
             <a class="btn btn-primary" href="contact.html">Starter anfragen</a>
           </div>
         </div>
 
-        <div class="price">
+        <!-- Business -->
+        <div class="price reveal delay-2">
           <span class="badge">Business</span>
           <h3>Business Website</h3>
-          <p class="muted">Bis 5 Seiten · Premium Design</p>
+          <p class="muted">Bis 5 Seiten · Premium Auftritt</p>
+
           <div class="amount">ab CHF 449.–</div>
+
           <ul class="ul">
-            <li>Alles aus Starter</li>
-            <li>Mehr Sektionen (Leistungen, Galerie)</li>
-            <li>Stärkere Conversion (CTAs, Struktur)</li>
+            <li>Alles aus dem Starter-Paket</li>
+            <li>Mehr Inhalte (Leistungen, Galerie, Sektionen)</li>
+            <li>Conversion-optimierte Struktur & CTAs</li>
             <li>2 Korrekturrunden</li>
           </ul>
-          <div class="hero-actions" style="margin-top:12px">
+
+          <div class="hero-actions" style="margin-top:14px">
             <a class="btn btn-primary" href="contact.html">Business anfragen</a>
           </div>
         </div>
       </div>
 
-      <div class="card" style="margin-top:14px">
-        <strong>Optional</strong>
-        <p class="muted" style="margin:6px 0 0">
-          Wartung/Updates, zusätzliche Seiten, kleine Änderungen nach dem Livegang.
+      <!-- Optional -->
+      <div class="card reveal delay-3" style="margin-top:18px">
+        <h3>Optional</h3>
+        <p class="muted">
+          Wartung & Updates, zusätzliche Seiten, kleinere Anpassungen
+          nach dem Livegang – flexibel & unkompliziert.
         </p>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Swiss Web Start · Schweiz</div>
+    <div class="container footer-inner">
+      <div>© 2026 Swiss Web Start · Schweiz</div>
+      <div class="footer-links">
+        <a href="contact.html">Kontakt</a>
+        <a href="about.html">Über uns</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
