@@ -626,4 +626,16 @@ input:focus, textarea:focus{
   margin: auto;
 }
 
+.hero-logo-mark{
+  width: 82px;
+  height: 82px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(79,124,255,1), rgba(33,212,253,1));
+  box-shadow: 0 26px 80px rgba(79,124,255,.28);
+  position: relative;
+  overflow: hidden; /* 🔥 SEHR WICHTIG */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
