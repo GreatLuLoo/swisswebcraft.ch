@@ -1,41 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontakt – Swiss Web Start</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">Swiss Web Start</div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">Über uns</a>
-    <a href="services.html">Dienstleistungen</a>
-    <a href="hours-location.html">Arbeitszeiten & Standort</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
-</header>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo"></span>
+        <span>Swiss Web Start</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Dienstleistungen</a>
+        <a href="hours-location.html">Arbeitszeiten & Standort</a>
+        <a class="nav-cta" href="contact.html">Kostenlose Anfrage</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="content">
-  <h2>Kontakt</h2>
-  <p>Schreiben Sie uns – wir melden uns schnellstmöglich.</p>
+  <main class="section">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p class="muted">
+        Schreiben Sie uns – wir melden uns schnellstmöglich.
+      </p>
 
-  <form action="https://formspree.io/f/xlgdpwpk" method="POST">
-    <input type="text" name="name" placeholder="Ihr Name" required>
-    <input type="email" name="email" placeholder="Ihre E-Mail" required>
-    <textarea name="message" placeholder="Ihre Anfrage" rows="5" required></textarea>
+      <div class="split" style="margin-top:12px">
+        <!-- Formular -->
+        <div class="card">
+          <strong>Kostenlose Anfrage</strong>
 
-    <input type="hidden" name="_subject" value="Neue Anfrage – Swiss Web Craft">
-    <button type="submit">Anfrage senden</button>
-  </form>
-</section>
+          <form
+            class="form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
 
-<footer>
-  <p>© 2026 Swiss Web Start · Schweiz</p>
-</footer>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Kurz: Was machst du? Was brauchst du?"
+              required
+            ></textarea>
+
+            <!-- Optional: Betreff -->
+            <input type="hidden" name="_subject" value="Neue Anfrage – Swiss Web Start">
+
+            <!-- Optional: Weiterleitung nach Absenden -->
+            <!-- <input type="hidden" name="_redirect" value="https://deine-domain.ch/danke.html"> -->
+
+            <button class="btn btn-primary" type="submit">
+              Anfrage senden
+            </button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="card">
+          <strong>Was wir von Ihnen brauchen:</strong>
+          <ul class="ul">
+            <li>Name & Branche</li>
+            <li>Welches Format? (z.B. Onepager, mehrere Seiten)</li>
+            <li>Gibt es bereits eine Domain oder ein Logo?</li>
+          </ul>
+
+          <p class="muted" style="margin-top:10px">
+            Unverbindlich & kostenlos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Swiss Web Start · Schweiz
+    </div>
+  </footer>
 
 </body>
 </html>
