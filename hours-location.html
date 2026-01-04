@@ -1,35 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Arbeitszeiten & Standort – Swiss Web Start</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span><span>Swiss Web Start</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Dienstleistungen</a>
+        <a href="hours-location.html">Arbeitszeiten & Standort</a>
+        <a class="nav-cta" href="contact.html">Kostenlose Anfrage</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="logo">Swiss Web Start</div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">Über uns</a>
-    <a href="services.html">Dienstleistungen</a>
-    <a href="hours-location.html">Arbeitszeiten & Standort</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
-</header>
+  <main class="section">
+    <div class="container">
+      <h2>Arbeitszeiten & Standort</h2>
 
-<section class="content">
-  <h2>Arbeitszeiten & Standort</h2>
-  <div class="card">
-    <p><strong>Arbeitszeiten:</strong><br>Montag – Freitag, 09:00 – 18:00</p>
-    <p><strong>Standort:</strong><br>Schweiz · Remote verfügbar</p>
-  </div>
-</section>
+      <div class="split" style="margin-top:12px">
+        <div class="card">
+          <strong>Arbeitszeiten</strong>
+          <p class="muted" style="margin:8px 0 0">Montag – Freitag, 09:00 – 18:00</p>
+          <p class="muted" style="margin:8px 0 0">Am Wochenende nach Absprache.</p>
+        </div>
 
-<footer>
-  <p>© 2026 Swiss Web Start · Schweiz</p>
-</footer>
+        <div class="card">
+          <strong>Standort</strong>
+          <p class="muted" style="margin:8px 0 0">Schweiz · Zürich</p>
+          <p class="muted" style="margin:8px 0 0">
+            Meetings per Call oder (wenn’s passt) auch vor Ort.
+          </p>
+        </div>
+      </div>
 
+      <div class="card" style="margin-top:14px">
+        <strong>Schnellkontakt</strong>
+        <p class="muted" style="margin:8px 0 0">
+          Am einfachsten: über das Kontaktformular – wir melden uns schnellstmöglich.
+        </p>
+        <div class="hero-actions" style="margin-top:12px">
+          <a class="btn btn-primary" href="contact.html">Kontakt öffnen</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Swiss Web Start · Schweiz</div>
+  </footer>
 </body>
 </html>
